@@ -94,7 +94,7 @@
       height: 250px;
       background: url('../img/vangogh_default.jpg');
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: $secondary-color solid 3px;
     }
   }
 

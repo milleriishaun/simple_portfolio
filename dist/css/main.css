@@ -57,7 +57,7 @@
       height: 250px;
       background: url("../img/vangogh_default.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: #eece1a solid 3px; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -164,7 +164,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #eece1a; }
+    border: #eece1a solid 3px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -177,7 +177,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #eece1a solid 5px; }
 
 .projects {
   display: grid;
@@ -185,11 +185,31 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: #fff solid 3px; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: #fff solid 3px;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 1.5rem 0rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-light, .btn-dark {
   display: block;
@@ -207,6 +227,13 @@ main {
 .btn-dark {
   background: black;
   color: #fff; }
+
+.phone_img {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 200px;
+  border-radius: 5px; }
 
 #main-footer {
   text-align: center;
